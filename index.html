@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- link for tailwind css  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+
+    </header>
+    <main class="container">
+        <section class="grid grid-cols-2  gap-4">
+            <div class="ml-40 m-10">
+                <img src="images/mac.png" alt="">
+            </div>
+            <div class="mt-10">
+                <h1 class="text-4xl font-semibold mb-2">Customize your Blue 24 inch <br>iMac with Apple M1 chip.</h1>
+                <p class="pr-40 text-justify">Apple M1 chip with 8 core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic keybord-US English</p>
+                <h4 class="text-xl font-bold  mt-8">Memory</h4>
+                <button class="button" id="memory-8gb">8GB unified memory</button>
+                <button class="button" id="memory-16gb">16GB unified memory</button>
+                <h4 class="text-xl font-bold  mt-8">Storage</h4>
+                <button class="button" id="storage-256gb">256GB SSD storage</button>
+                <button class="button" id="storage-512gb">512GB SSD storage</button>
+                <button class="button" id="storage-1tb">1TB SSD storage</button>
+                <h4 class="text-xl font-bold  mt-8">choose your delivary option</h4>
+                <button class="button" id="delivery-aug25">Friday, Aug 25 FREE prime Delivery</button>
+                <button class="button" id="delivery-aug21">Friday, Aug 21 Delivery charge $20</button>
+                <div class="grid grid-cols-2 mt-12">
+                    <section>
+                        <pre class="bottom-border">Best price                $<span id="best-price">1299</span></pre>
+                        <hr>
+                        <pre class="bottom-border">Extra memory cost         $<span id="memory-cost">0</span></pre>
+                        <hr>
+                        <pre class="bottom-border">Extra storage cost        $<span id="storage-cost">0</span></pre>
+                        <hr>
+                        <pre class="border-b-2 border-black">Delivery charge           $<span id="delivery-cost">0</span></pre>
+                        <pre>Total price               $<span id="total-price">1299</span></pre>
+                    </section>
+                </div>
+                <section class="mt-8 mb-4">
+                    <p>Add Pomo code</p>
+                    <input type="text" class="border border-black rounded" id="type-for-commission">
+                    <Button class="bg-red-500 px-2 rounded text-white" onclick="applForCommission()">Apply</Button>
+                </section>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <h2 class="text-center text-2xl font-bold my-4">Total: $<span id="price-with-commission">1299</span></h2>
+    </footer>
+
+    <script src="js/script1.js"></script>
+</body>
+
+</html>
